@@ -227,11 +227,13 @@ with col6:
 
 if start_btn:
     st.session_state["run"] = "true"
-    st.experimental_rerun()
+    #st.experimental_rerun()
+    st.rerun()
 
 if stop_btn:
     st.session_state["run"] = "false"
-    st.experimental_rerun()
+    #st.experimental_rerun()
+    st.rerun()
 else:
     if not emotion:
         pass
